@@ -802,133 +802,166 @@ a {
           border: 0;
           background-color: #a95847; }
 
-/* 4.5 Main - Education section. Third section */
-.education {
-  padding: 170px 80px 150px; }
-  .education:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.4); }
-  .education-header {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 97px; }
-  .education-title {
-    margin: 0; }
-  .education-table {
-    border-top: 1px solid #FDE3A7; }
-    .education-table__row {
-      border-bottom: 1px solid #FDE3A7;
-      padding: 40px 0;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .education-table__txt {
-      font-family: "NeueMontreal-Regular", sans-serif;
-      font-size: 28px;
-      line-height: 100%;
-      color: #FDE3A7;
-      margin: 0; }
-    .education-table__descr {
-      font-family: "NeueMontreal-Regular", sans-serif;
-      font-size: 15px;
-      line-height: 130%;
-      color: #FDE3A7;
-      margin: 0;
-      padding-right: 3px; }
-    .education-table__cell {
-      margin-bottom: 20px; }
-      .education-table__cell:last-child {
-        margin-bottom: 0; }
-  .education .swiper-buttons {
-    margin-top: 60px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .education .swiper-buttons .swiper-button-prev, .education .swiper-buttons .swiper-button-next {
-      position: relative;
-      z-index: 10;
-      left: inherit;
-      right: inherit;
-      margin: 0 20px;
-      width: 40px;
-      height: 40px;
-      background-repeat: no-repeat;
-      background-position: center; }
-      .education .swiper-buttons .swiper-button-prev:after, .education .swiper-buttons .swiper-button-next:after {
-        content: none; }
-      .education .swiper-buttons .swiper-button-prev:focus, .education .swiper-buttons .swiper-button-next:focus {
-        outline: none; }
-    .education .swiper-buttons .swiper-button-prev {
-      background-image: url(../images/prev.svg); }
-    .education .swiper-buttons .swiper-button-next {
-      background-image: url(../images/next.svg); }
-
+          .pricing {
+            padding: 170px 80px 150px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.4);
+            &:after {
+              content: '';
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+              background: rgba(0, 0, 0, 0.4);
+            }
+            .pricing-header {
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-between;
+              margin-bottom: 97px;
+            }
+            .pricing-title {
+              margin: 0;
+            }
+            .pricing-cnt {
+              display: flex;
+              justify-content: space-between;
+            }
+            .pricing-table {
+              border-top: 1px solid #FDE3A7;
+              padding: 40px 0;
+              .pricing-table__txt {
+                font-family: "NeueMontreal-Regular", sans-serif;
+                font-size: 28px;
+                line-height: 100%;
+                color: #FDE3A7;
+                margin: 0;
+              }
+              .pricing-table__descr {
+                font-family: "NeueMontreal-Regular", sans-serif;
+                font-size: 15px;
+                line-height: 130%;
+                color: #FDE3A7;
+                margin: 0;
+                padding-right: 3px;
+              }
+              .pricing-btn {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #fff;
+                background-color: #FDE3A7;
+                border: none;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover {
+                  background-color: #E0C57F;
+                }
+              }
+            }
+          }
+          
 /* 4.6 Main - Projects section. Fourth section */
-.projects-list {
-  overflow: inherit; }
-  .projects-list .swiper-wrapper {
-    transition-timing-function: linear !important; }
-  .projects-list .swiper-slide {
-    position: relative;
-    width: auto;
-    margin-right: 180px; }
-  .projects-list__item {
-    padding: 0 93px; }
-    .projects-list__item:hover {
-      cursor: url("../images/hover.svg"), pointer; }
-  .projects-list__txt {
-    font-size: 60px;
-    line-height: 100%;
-    color: #FDE3A7;
-    white-space: nowrap;
-    text-align: center; }
-  .projects-list__hover {
-    position: absolute;
-    width: 500px;
-    opacity: 0;
-    margin: auto;
-    z-index: 1;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    transition: .2s ease; }
-  .projects-list__img {
-    position: relative;
-    padding-bottom: 120%;
-    display: block;
-    cursor: url("../images/hover.svg"), pointer; }
-    .projects-list__img img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: center;
-         object-position: center;
-      width: 100%;
-      height: 100%; }
+.section-heading {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.projects-categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.category-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.projects-slider {
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-slide__item {
+  text-align: left;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;
+}
+
+.projects-slide__item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.projects-slide__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.projects-slide__content {
+  padding: 20px;
+  background: #fff;
+}
+
+.projects-slide__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.projects-slide__description {
+  font-size: 16px;
+  color: #666;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .projects-slide__title {
+    font-size: 20px;
+  }
+  .projects-slide__description {
+    font-size: 14px;
+  }
+}
+
 
 /* 4.7 Main - Services section. Fifth section */
 .services {
