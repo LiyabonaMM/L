@@ -802,71 +802,88 @@ a {
           border: 0;
           background-color: #a95847; }
 
-          /*Pricing  */
+          /* Pricing */
+/* Pricing */
+.pricing {
+  padding: 170px 80px 150px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+}
+.pricing:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+}
+.pricing-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 97px;
+}
+.pricing-title {
+  margin: 0;
+  color: #FDE3A7;
+}
+.pricing-cnt {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.pricing-table {
+  border-top: 1px solid #FDE3A7;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+.pricing-table__txt {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 28px;
+  line-height: 100%;
+  color: #FDE3A7;
+  margin: 0 0 20px;
+}
+.pricing-table__features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #FDE3A7;
+}
+.pricing-table__features li {
+  margin-bottom: 10px;
+}
+.pricing-table__features s {
+  color: #E0C57F;
+}
+.pricing-table__descr {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 130%;
+  color: #FDE3A7;
+  margin: 20px 0;
+  padding-right: 3px;
+}
+.pricing-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #944E3F;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.pricing-btn:hover {
+  background-color: #944E3F;
+}
 
-          .pricing {
-            padding: 170px 80px 150px;
-            position: relative;
-            background: rgba(0, 0, 0, 0.4);
-            &:after {
-              content: '';
-              width: 100%;
-              height: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              margin: auto;
-              background: rgba(0, 0, 0, 0.4);
-            }
-            .pricing-header {
-              display: flex;
-              align-items: flex-end;
-              justify-content: space-between;
-              margin-bottom: 97px;
-            }
-            .pricing-title {
-              margin: 0;
-            }
-            .pricing-cnt {
-              display: flex;
-              justify-content: space-between;
-            }
-            .pricing-table {
-              border-top: 1px solid #FDE3A7;
-              padding: 40px 0;
-              .pricing-table__txt {
-                font-family: "NeueMontreal-Regular", sans-serif;
-                font-size: 28px;
-                line-height: 100%;
-                color: #FDE3A7;
-                margin: 0;
-              }
-              .pricing-table__descr {
-                font-family: "NeueMontreal-Regular", sans-serif;
-                font-size: 15px;
-                line-height: 130%;
-                color: #FDE3A7;
-                margin: 0;
-                padding-right: 3px;
-              }
-              .pricing-btn {
-                display: inline-block;
-                margin-top: 20px;
-                padding: 10px 20px;
-                font-size: 16px;
-                color: #fff;
-                background-color: #FDE3A7;
-                border: none;
-                cursor: pointer;
-                text-decoration: none;
-                &:hover {
-                  background-color: #E0C57F;
-                }
-              }
-            }
-          }
           
 /* 4.6 Main - Projects section. Fourth section */
 /* projects.css */
@@ -912,13 +929,13 @@ a {
   justify-content: center;
 }
 .projects-slide__item {
+  position: relative;
   text-align: left;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 600px;
-  background-color: #fde3a7;
 }
 .projects-slide__item:hover {
   transform: translateY(-10px);
@@ -928,20 +945,20 @@ a {
   width: 100%;
   height: auto;
   display: block;
-  border-bottom: 1px solid #eaeaea;
 }
-.projects-slide__content {
-  padding: 20px;
-  background: #fff;
+.projects-slide__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fde3a7;
+  padding: 10px;
+  text-align: center;
 }
 .projects-slide__title {
   font-size: 24px;
-  margin-bottom: 10px;
-  color: #333;
-}
-.projects-slide__description {
-  font-size: 16px;
-  color: #666;
+  margin: 0;
 }
 .swiper-button-next, .swiper-button-prev {
   color: #fde3a7;
@@ -950,10 +967,8 @@ a {
   .projects-slide__title {
     font-size: 20px;
   }
-  .projects-slide__description {
-    font-size: 14px;
-  }
 }
+
 
 
 /* 4.7 Main - Services section. Fifth section */
