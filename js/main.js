@@ -257,42 +257,10 @@ function headerFixed() {
   });
 }
 
-// Initialize Swiper
-const swiper = new Swiper('.projects-slider', {
+const swiper = new Swiper('.swiper-container', {
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  slidesPerView: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
-});
-
-const categoryButtons = document.querySelectorAll('.category-btn');
-const slides = document.querySelectorAll('.swiper-slide');
-
-categoryButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const category = button.getAttribute('data-category');
-
-    slides.forEach(slide => {
-      if (category === 'all' || slide.getAttribute('data-category') === category) {
-        slide.style.display = 'flex';
-      } else {
-        slide.style.display = 'none';
-      }
-    });
-
-    swiper.update();
-  });
 });

@@ -802,6 +802,8 @@ a {
           border: 0;
           background-color: #a95847; }
 
+          /*Pricing  */
+
           .pricing {
             padding: 170px 80px 150px;
             position: relative;
@@ -867,51 +869,48 @@ a {
           }
           
 /* 4.6 Main - Projects section. Fourth section */
-.section-heading {
-  text-align: center;
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 30px;
-  font-weight: bold;
+/* projects.css */
+.projects {
+  padding: 170px 80px 150px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
 }
-
-.projects-categories {
+.projects:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+}
+.projects-header {
   display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 97px;
 }
-
-.category-btn {
-  background-color: #f0f0f0;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+.projects-title {
+  margin: 0;
+  color: #FDE3A7;
 }
-
-.category-btn:hover {
-  background-color: #e0e0e0;
-}
-
 .projects-slider {
   position: relative;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 .swiper-wrapper {
   display: flex;
   align-items: center;
 }
-
 .swiper-slide {
   display: flex;
   justify-content: center;
 }
-
 .projects-slide__item {
   text-align: left;
   border-radius: 15px;
@@ -919,40 +918,34 @@ a {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 600px;
+  background-color: #fde3a7;
 }
-
 .projects-slide__item:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
-
 .projects-slide__img img {
   width: 100%;
   height: auto;
   display: block;
   border-bottom: 1px solid #eaeaea;
 }
-
 .projects-slide__content {
   padding: 20px;
   background: #fff;
 }
-
 .projects-slide__title {
   font-size: 24px;
   margin-bottom: 10px;
   color: #333;
 }
-
 .projects-slide__description {
   font-size: 16px;
   color: #666;
 }
-
 .swiper-button-next, .swiper-button-prev {
-  color: #333;
+  color: #fde3a7;
 }
-
 @media (max-width: 768px) {
   .projects-slide__title {
     font-size: 20px;
