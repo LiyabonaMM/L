@@ -173,6 +173,7 @@ html.inner-page, body.inner-page, body.inner-page .main {
 
 body {
   display: -webkit-flex;
+  overflow-y: auto; 
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
@@ -244,43 +245,42 @@ a {
       background: #FDE3A7; }
 
 /* 1.6 Loader */
+
 .loader {
   position: fixed;
-  overflow: hidden;
-  z-index: 10000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background: #0F0F0F;
-  color: #000000;
-  text-align: center; }
-
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .spinner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
 .double-bounce1, .double-bounce2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #FDE3A7;
+  background-color:#944E3F;
   opacity: 0.6;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out; }
-
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
 .double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s; }
-
+  animation-delay: -1.0s;
+}
+@keyframes sk-bounce {
+  0%, 100% { transform: scale(0.0) }
+  50% { transform: scale(1.0) }
+}
 /* 1.6.1 Loader Animation */
 @-webkit-keyframes sk-bounce {
   0%, 100% {
