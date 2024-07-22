@@ -1153,115 +1153,112 @@ a {
     line-height: 130%;
     color: #FDE3A7;
     padding-right: 20px; }
-
-/* 4.10 Main - Contact section. Eight section*/
+/* Contact section styles */
 .contact {
-  padding: 170px 80px 150px; }
-  .contact:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.4); }
-  .contact-cnt {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 100%; }
-  .contact-title {
-    margin: 0 0 45px; }
-  .contact-subtitle {
-    margin: 0 0 10px;
-    font-family: "NeueMontreal-Regular", sans-serif;
-    font-size: 15px;
-    line-height: 130%;
-    letter-spacing: 0.075em;
-    text-transform: uppercase;
-    color: #a95847; }
-  .contact-descr {
-    font-family: "NeueMontreal-Regular", sans-serif;
-    font-size: 15px;
-    line-height: 130%;
-    color: #FDE3A7;
-    width: 80%; }
-    .contact-logos__item {
-      margin-bottom: 50px; }
-      .contact-logos__item img {
-        max-width: 100%; }
-  .contact-info__mail, .contact-info__phone {
-    display: block;
-    color: #FDE3A7;
-    transition: all 0.3s ease-out;
-    text-decoration: none;
-    font-size: 28px; }
-    .contact-info__mail:hover, .contact-info__phone:hover {
-      color: #a95847; }
-  .contact-info__mail {
-    line-height: 100%;
-    font-family: "NeueMontreal-Regular", sans-serif;
-    margin-bottom: 32px; }
-  .contact-info__phone {
-    line-height: 90%;
-    font-family: "SFProDisplay-Medium", sans-serif;
-    margin-bottom: 75px; }
-  .contact-form .form-group {
-    position: relative;
-    margin-bottom: 60px; }
-    .contact-form .form-group .form-label {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      font-family: "NeueMontreal-Regular", sans-serif;
-      font-size: 15px;
-      line-height: 100%;
-      letter-spacing: 0.075em;
-      text-transform: uppercase;
-      color: #FDE3A7;
-      transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
-      transition: transform 150ms ease-out, font-size 150ms ease-out;
-      transition: transform 150ms ease-out, font-size 150ms ease-out, -webkit-transform 150ms ease-out; }
-    .contact-form .form-group.focused .form-label {
-      -webkit-transform: translateY(-15px);
-              transform: translateY(-15px);
-      font-size: .75em; }
-  .contact-form .form-control {
-    height: 35px;
-    border: 0;
-    background: transparent;
-    border-bottom: 1px solid #FDE3A7;
-    width: 100%;
-    border-radius: 0;
-    -webkit-appearance: inherit;
-    font-size: 15px;
-    line-height: 100%;
-    padding: 0;
-    color: #FDE3A7;
-    font-family: "NeueMontreal-Regular", sans-serif; }
-    .contact-form .form-control:focus {
-      outline: none; }
-  .contact-form textarea.form-control {
-    height: 90px; }
-  .contact-form .error {
-    display: block;
-    color: #a95847;
-    margin-top: 10px; }
-  .contact-btn {
-    border: 0;
-    cursor: pointer;
-    -webkit-appearance: inherit;
-    border-radius: 0; }
+  padding: 170px 80px 150px;
+  position: relative; /* Ensure correct positioning for pseudo-elements */
+}
+
+.contact:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contact-title {
+  margin: 0 0 45px;
+}
+
+.contact-descr {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 130%;
+  color: #FDE3A7;
+  width: 80%;
+}
+
+.contact-info__mail, .contact-info__phone {
+  display: block;
+  color: #FDE3A7;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.contact-info__mail:hover, .contact-info__phone:hover {
+  color: #a95847;
+}
+
+.contact-info__mail {
+  margin-bottom: 32px;
+}
+
+.contact-info__phone {
+  margin-bottom: 75px;
+}
+
+/* Form styles */
+.contact-form {
+  background: transparent; /* Make the form background transparent */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-label {
+  display: block;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 15px;
+  color: #FDE3A7;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.contact-form textarea.form-control {
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-btn {
+  background-color: #a95847;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #FDE3A7;
+}
 
 /* 6. Modal */
 .modal.show {
@@ -1476,177 +1473,6 @@ a {
     background: #FDE3A7; }
     .ps-heart__link:hover svg path {
       fill: #a95847; }
-
-/* 9. Blog */
-.blog {
-  padding: 185px 0 140px;
-  border-bottom: 1px solid #FDE3A7; }
-  .blog-date {
-    margin-bottom: 45px;
-    font-size: 15px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #a95847; }
-  .blog-title {
-    margin-bottom: 45px;
-    font-family: "NeueMontreal-Medium", sans-serif; }
-  .blog-txt {
-    font-size: 16px;
-    line-height: 162%;
-    color: #FDE3A7;
-    margin-bottom: 25px; }
-    .blog-txt:last-child {
-      margin-bottom: 0; }
-  .blog-block {
-    margin-bottom: 120px; }
-    .blog-block:last-child {
-      margin-bottom: 0; }
-  .blog-img {
-    margin-bottom: 120px; }
-    .blog-img img {
-      width: 100%; }
-  .blog-figure {
-    border: 1px solid #FDE3A7;
-    margin: 0 0 60px;
-    padding: 40px 72px 20px 128px;
-    position: relative; }
-    .blog-figure:before {
-      content: '';
-      position: absolute;
-      width: 38px;
-      height: 38px;
-      background-image: url(../images/blog-quote.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      top: 41px;
-      left: 41px; }
-  .blog-blockquote {
-    margin: 0; }
-    .blog-blockquote__txt {
-      font-size: 20px;
-      line-height: 175%;
-      color: #FDE3A7;
-      margin-bottom: 40px; }
-  .blog-figcaption {
-    font-size: 16px;
-    line-height: 26px;
-    color: #a95847; }
-    .blog-figcaption cite {
-      color: #FDE3A7;
-      font-style: normal; }
-  .blog-tag {
-    margin-bottom: 35px; }
-    .blog-tag__item {
-      color: #FDE3A7;
-      margin-right: 6px; }
-      .blog-tag__item:after {
-        content: ','; }
-      .blog-tag__item:last-child {
-        margin-right: 0; }
-        .blog-tag__item:last-child:after {
-          content: none; }
-    .blog-tag__link {
-      color: #FDE3A7;
-      transition: all 0.3s ease-out; }
-      .blog-tag__link:hover {
-        color: #a95847; }
-  .blog-tag, .blog-share {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 15px;
-    line-height: 26px; }
-    .blog-tag__txt, .blog-share__txt {
-      margin-right: 6px;
-      color: #FDE3A7;
-      font-family: "NeueMontreal-Medium", sans-serif; }
-    .blog-tag__list, .blog-share__list {
-      margin: 0;
-      padding: 0;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      list-style: none; }
-  .blog-share__item {
-    margin-right: 20px; }
-    .blog-share__item:last-child {
-      margin-right: 0; }
-  .blog-share__link {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .blog-share__link svg path {
-      transition: all 0.3s ease-out; }
-    .blog-share__link:hover svg path {
-      fill: #a95847; }
-
-/* 10. Comment */
-.comment {
-  padding: 135px 0 200px; }
-  .comment-title {
-    margin-bottom: 85px; }
-  .comment-form__title {
-    font-family: "NeueMontreal-Medium", sans-serif;
-    font-size: 28px;
-    line-height: 34px;
-    color: #FDE3A7;
-    margin-bottom: 75px; }
-  .comment-cnt {
-    margin-bottom: 75px; }
-  .comment-item__inner {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-bottom: 90px; }
-    .comment-item__inner:last-child {
-      margin-bottom: 0; }
-  .comment-item__img {
-    width: 80px;
-    height: 80px;
-    margin-right: 35px; }
-    .comment-item__img img {
-      border-radius: 50%;
-      max-width: 100%;
-      width: 100%; }
-  .comment-item__info {
-    width: calc(100% - 115px); }
-  .comment-item__header {
-    font-size: 13px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #FDE3A7;
-    margin-bottom: 11px; }
-  .comment-item__author {
-    font-size: 16px;
-    line-height: 19px;
-    color: #a95847;
-    margin-right: 3px; }
-  .comment-item__txt {
-    font-size: 15px;
-    line-height: 173%;
-    color: #FDE3A7;
-    margin-bottom: 20px; }
-  .comment-item .comment-items {
-    padding-left: 115px; }
-  .comment-item__btn {
-    padding: 5px 25px;
-    display: inline-block;
-    font-family: "NeueMontreal-Medium", sans-serif;
-    font-size: 12px;
-    line-height: 14px;
-    text-transform: capitalize; }
 
 .footer {
   padding: 50px 90px;
