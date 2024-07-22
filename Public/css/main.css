@@ -720,6 +720,42 @@ a {
 .mfp-iframe-holder .mfp-content {
   max-width: calc(100% - 80px); }
 
+  /* General styles for the experience section */
+.experience {
+  padding: 50px 0; /* Adjust as needed */
+}
+
+.experience-img img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure proper alignment on mobile devices */
+@media (max-width: 768px) {
+  .experience .container {
+      padding: 0 15px; /* Add padding to the container */
+  }
+
+  .experience-info {
+      text-align: center; /* Center-align text on mobile */
+  }
+
+  .experience-info__txt {
+      width: 100%; /* Ensure text block takes full width */
+      margin-top: 20px; /* Add margin for spacing */
+  }
+
+  .col-lg-6, .col-lg-5 {
+      width: 100%; /* Make columns full width on mobile */
+      padding: 0; /* Remove padding for columns */
+  }
+
+  .col-lg-5 {
+      margin-top: 20px; /* Add margin for spacing */
+  }
+}
+
+
 /* 4.4 Main - Experience section. Second section */
 .experience {
   padding: 120px 80px 100px; }
@@ -800,12 +836,13 @@ a {
           background-color: #a95847; }
 
           /* Pricing */
-/* Pricing */
+/* General styles for the pricing section */
 .pricing {
   padding: 170px 80px 150px;
   position: relative;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .pricing:after {
   content: '';
   width: 100%;
@@ -815,30 +852,39 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .pricing-header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 97px;
 }
+
 .pricing-title {
   margin: 0;
   color: #FDE3A7;
 }
+
 .pricing-cnt {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
+
+.pricing-item {
+  flex: 1; /* Ensure items take equal space */
+  margin: 0 15px; /* Add margin for spacing */
+}
+
 .pricing-table {
   border-top: 1px solid #FDE3A7;
   padding: 40px 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
 }
+
 .pricing-table__txt {
   font-family: "NeueMontreal-Regular", sans-serif;
   font-size: 28px;
@@ -846,26 +892,30 @@ a {
   color: #FDE3A7;
   margin: 0 0 20px;
 }
+
 .pricing-table__features {
   list-style: none;
   padding: 0;
   margin: 20px 0;
   color: #FDE3A7;
 }
+
 .pricing-table__features li {
   margin-bottom: 10px;
 }
+
 .pricing-table__features s {
   color: #E0C57F;
 }
+
 .pricing-table__descr {
   font-family: "NeueMontreal-Regular", sans-serif;
   font-size: 15px;
   line-height: 130%;
   color: #FDE3A7;
   margin: 20px 0;
-  padding-right: 3px;
 }
+
 .pricing-btn {
   display: inline-block;
   margin-top: 20px;
@@ -877,8 +927,55 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
 .pricing-btn:hover {
   background-color: #944E3F;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .pricing-header {
+    flex-direction: column; /* Stack title and description */
+    align-items: center; /* Center-align items */
+    margin-bottom: 50px; /* Adjust bottom margin */
+  }
+
+  .pricing-cnt {
+    flex-direction: column; /* Stack pricing items vertically */
+    align-items: center; /* Center-align items */
+    gap: 30px; /* Adjust gap between items */
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 100px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .pricing-header {
+    margin-bottom: 30px; /* Adjust bottom margin */
+  }
+
+  .pricing-title {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .pricing-item {
+    width: 100%; /* Full width on mobile */
+    margin: 0; /* Remove side margins */
+  }
+
+  .pricing-table {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .pricing-table__txt {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .pricing-table__descr {
+    font-size: 13px; /* Adjust font size for smaller screens */
+  }
 }
 
           
