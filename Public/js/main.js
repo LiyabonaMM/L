@@ -66,7 +66,7 @@
     }
 
     function swiperSlider() {
-        new Swiper('.js-education-slider, .js-reviews-slider', {
+        new Swiper('.projects-slider', {
             resizeObserver: true,
             loop: false,
             navigation: {
@@ -75,7 +75,7 @@
             }
         });
     }
-
+    
     function headerMenu() {
         $('.js-header-burger').on('click', function () {
             clearTimeout(window.headerTimeout);
