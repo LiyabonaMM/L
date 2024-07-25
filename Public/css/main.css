@@ -1357,6 +1357,16 @@ a {
   background-color: #FDE3A7;
 }
 
+/* Thank You Message styles */
+#form-response {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e0f7fa;
+  color: #00796b;
+  border: 1px solid #004d40;
+  border-radius: 5px;
+}
+
 /* 6. Modal */
 .modal.show {
   display: block;

@@ -336,66 +336,71 @@
     </div>
   </div>
 </section>
-          <!-- Contact section. Eighth section-->
-          <section class="section pp-scrollable" id="contact">
-            <div class="contact section-inner" style="background-image: url(https://i.imghippo.com/files/WKhGG1721201244.jpg)">
-              <div class="container section-cnt">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="contact-cnt">
-                      <div class="contact-main">
-                        <h2 class="h2 contact-title">Get in touch</h2>
-                        <p class="contact-descr">Let's Discuss Your Next Project</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-7 offset-xl-1 col-lg-7 offset-lg-1">
-                    <div class="contact-info">
-                      <a class="contact-info__mail" href="mailto:Sambayler@info.com">lstudioscreation@gmail.com</a>
-                      <a class="contact-info__phone" href=""></a>
-                      <!-- Formspree Form -->
-                      <form
-                        class="js-form contact-form"
-                        action="https://formspree.io/f/xnnajjly"
-                        method="POST"
-                      >
-                        <div class="form-group">
-                          <label class="form-label" for="email">E-mail</label>
-                          <input
-                            class="form-control"
-                            id="email"
-                            type="email"
-                            name="email"
-                            required
-                            aria-required="true"
-                          >
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label" for="message">Message</label>
-                          <textarea
-                            class="form-control"
-                            id="message"
-                            name="message"
-                            cols="30"
-                            rows="10"
-                            required
-                            aria-required="true"
-                          ></textarea>
-                        </div>
-                        <button
-                          class="contact-btn btn"
-                          type="submit"
-                        >
-                          Send
-                        </button>
-                      </form>
-                      <!-- End Formspree Form -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!-- Contact section. Eighth section -->
+<section class="section pp-scrollable" id="contact">
+  <div class="contact section-inner" style="background-image: url(https://i.imghippo.com/files/WKhGG1721201244.jpg)">
+    <div class="container section-cnt">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="contact-cnt">
+            <div class="contact-main">
+              <h2 class="h2 contact-title">Get in touch</h2>
+              <p class="contact-descr">Let's Discuss Your Next Project</p>
             </div>
-          </section>
+          </div>
+        </div>
+        <div class="col-xl-7 offset-xl-1 col-lg-7 offset-lg-1">
+          <div class="contact-info">
+            <a class="contact-info__mail" href="mailto:lstudioscreation@gmail.com">lstudioscreation@gmail.com</a>
+            <a class="contact-info__phone" href=""></a>
+            <!-- Formspree Form -->
+            <form
+              id="contact-form"
+              class="js-form contact-form"
+              action="https://formspree.io/f/xnnajjly"
+              method="POST"
+            >
+              <div class="form-group">
+                <label class="form-label" for="email">E-mail</label>
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  aria-required="true"
+                >
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <button
+                class="contact-btn btn"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+            <!-- Thank You Message -->
+            <div id="form-response" style="display: none;">
+              <p>Thank you! We will be in contact with you shortly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         </div>
       </main>
       <!-- footer-->
