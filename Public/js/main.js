@@ -24,6 +24,7 @@
                 anchors: ['home', 'about', 'education', 'projects', 'skill', 'testimonials', 'news', 'contact'],
                 menu: '#navbar',
                 navigation: false,
+                scrollingSpeed: 1500,
                 onLeave: function (index, nextIndex, direction) {
                     const $scrollItems = $(".section-scroll-item");
                     $scrollItems.removeClass("active");
@@ -68,14 +69,14 @@
     function swiperSlider() {
         new Swiper('.projects-slider', {
             resizeObserver: true,
-            loop: false,
+            loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
             }
         });
     }
-    
+
     function headerMenu() {
         $('.js-header-burger').on('click', function () {
             clearTimeout(window.headerTimeout);
