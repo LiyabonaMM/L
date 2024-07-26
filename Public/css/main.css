@@ -1148,68 +1148,91 @@ a {
       line-height: 130%;
       color: #FDE3A7; }
 
-/* 4.8 Main - Reviews section. Sixth section */
+   /* Reviews Slider Specific Styles */
 .reviews {
-  padding: 170px 80px 150px; }
-  .reviews-title {
-    margin: 0;
-    padding-right: 70px; }
-  .reviews-txt {
-    font-family: "NeueMontreal-Regular", sans-serif;
-    font-size: 15px;
-    line-height: 130%;
-    color: #FDE3A7;
-    margin: 0 0 50px; }
-  .reviews-author {
-    font-family: "NeueMontreal-Medium", sans-serif;
-    font-size: 25px;
-    line-height: 130%;
-    color: #FDE3A7;
-    margin: 0 0 10px; }
-  .reviews-post {
-    font-family: "NeueMontreal-Regular", sans-serif;
-    font-size: 15px;
-    line-height: 130%;
-    text-transform: uppercase;
-    color: #a95847; }
-  .reviews-cnt {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 12vh;}
-  .reviews-quote {
-    margin-right: 80px;}
-  .reviews-items {
-    width: 66%; }
-  .reviews .swiper-buttons {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin: 50px -20px 0; }
-    .reviews .swiper-buttons .swiper-button-prev, .reviews .swiper-buttons .swiper-button-next {
-      position: relative;
-      z-index: 10;
-      left: inherit;
-      right: inherit;
-      margin: 0 20px;
-      width: 40px;
-      height: 40px;
-      background-repeat: no-repeat;
-      background-position: center; }
-      .reviews .swiper-buttons .swiper-button-prev:after, .reviews .swiper-buttons .swiper-button-next:after {
-        content: none; }
-      .reviews .swiper-buttons .swiper-button-prev:focus, .reviews .swiper-buttons .swiper-button-next:focus {
-        outline: none; }
-    .reviews .swiper-buttons .swiper-button-prev {
-      background-image: url(../images/prev.svg); }
-    .reviews .swiper-buttons .swiper-button-next {
-      background-image: url(../images/next.svg); }
+  padding: 170px 80px 150px; 
+}
+
+.reviews-title {
+  margin: 0;
+  padding-right: 70px; 
+}
+
+.reviews-txt {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 130%;
+  color: #FDE3A7;
+  margin: 0 0 50px; 
+}
+
+.reviews-author {
+  font-family: "NeueMontreal-Medium", sans-serif;
+  font-size: 25px;
+  line-height: 130%;
+  color: #FDE3A7;
+  margin: 0 0 10px; 
+}
+
+.reviews-post {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #a95847; 
+}
+
+.reviews-cnt {
+  display: flex;
+  padding-top: 12vh;
+}
+
+.reviews-quote {
+  margin-right: 80px;
+}
+
+.reviews-items {
+  width: 66%; 
+}
+
+.reviews .swiper-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 50px -20px 0; 
+}
+
+.reviews .swiper-buttons .swiper-button-prev,
+.reviews .swiper-buttons .swiper-button-next {
+  position: relative;
+  z-index: 10;
+  left: inherit;
+  right: inherit;
+  margin: 0 20px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.reviews .swiper-buttons .swiper-button-prev:after,
+.reviews .swiper-buttons .swiper-button-next:after {
+  content: none; 
+}
+
+.reviews .swiper-buttons .swiper-button-prev:focus,
+.reviews .swiper-buttons .swiper-button-next:focus {
+  outline: none; 
+}
+
+.reviews .swiper-buttons .swiper-button-prev {
+  background-image: url(../images/prev.svg); 
+}
+
+.reviews .swiper-buttons .swiper-button-next {
+  background-image: url(../images/next.svg); 
+}
+
 
 /* 4.9 Main - Latest news section. Seventh section*/
 .news {

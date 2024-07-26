@@ -66,13 +66,24 @@
     $window.on('resize', debounce(updateSectionScrollbar, 100));
   }
 
-  function swiperSlider() {
+  function initSwiperSliders() {
+    // Initialize projects slider
     new Swiper('.projects-slider', {
       resizeObserver: true,
       loop: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.projects-slider .swiper-button-next',
+        prevEl: '.projects-slider .swiper-button-prev'
+      }
+    });
+
+    // Initialize reviews slider
+    new Swiper('.js-reviews-slider', {
+      resizeObserver: true,
+      loop: true,
+      navigation: {
+        nextEl: '.js-reviews-slider .swiper-button-next',
+        prevEl: '.js-reviews-slider .swiper-button-prev'
       }
     });
   }
@@ -206,7 +217,7 @@
   // Initialize functions
   loader();
   pagepiling();
-  swiperSlider();
+  initSwiperSliders(); // Initialize Swipers
   headerMenu();
   videoPlayer();
   labelAnim();
